@@ -1,56 +1,52 @@
-* {
-  margin: 0;
-  color: white;
-  font-family: "Blender Pro Book";
-  overflow: hidden;
-}
-
-.about {
-  /*background-image: linear-gradient(#090909 , rgb(15, 15, 15));*/
-  background-color: #090909;
-
-  height: 100vh;
-  width: 100vw;
-}
-
-.title {
-  position: absolute;
-  top: 22vh;
-  left: 9vw;
-}
-
-.bg{
-  background-image: url('/src/image/bg.png');
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  opacity: .025;
-
-}
-.noise{
-  background-image: url('/src/image/noise.png');
-  background-size: contain; 
-  background-repeat: no-repeat;
-  width: 100vw;
-  height:40%;
-  position: absolute;
-  bottom: 0;
-  left: 0vw;
-  opacity: .1;
-}
 
 
-@media (max-width: 600px) {
+  .about {
+
+
+
+    height: 100vh;
+    width: 100vw;
+  }
+
   .title {
     position: absolute;
+    color: black;
     top: 22vh;
-    left: 12vw;
+    left: 9vw;
   }
+
+    .bg-about{
+      background-image: url('/src/image/bg.png');
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      opacity: .025;
+
+    }
   .noise{
+    background-image: url('/src/image/noise.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:40%;
     position: absolute;
-    bottom: -125px;
-    left: -110px;
+    bottom: 0;
+    left: 0vw;
+    opacity: .1;
   }
-}
+
+
+  @media (max-width: 600px) {
+    .title {
+      position: absolute;
+      top: 22vh;
+      left: 12vw;
+    }
+    .noise{
+      position: absolute;
+      bottom: -125px;
+      left: -110px;
+    }
+  }

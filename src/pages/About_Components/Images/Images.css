@@ -5,7 +5,7 @@
 .border {
   width: 18vw;
   height: 43vh;
-  border: yellow solid 2px;
+  border: #090909 solid 4px;
 
   position: absolute;
   top: 35vh;
@@ -13,13 +13,13 @@
 }
 
 .neo {
-  background: rgb(227, 231, 48);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     145deg,
-    rgba(227, 231, 48, 1) 0%,
-    rgba(251, 255, 49, 1) 25%,
-    rgba(252, 238, 10, 1) 75%,
-    rgba(255, 241, 5, 1) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(3, 3, 3, .9) 25%,
+    rgba(5, 5, 5, .7) 75%,
+    rgba(9, 9, 9, .5) 100%
   );
 
   width: 18vw;
