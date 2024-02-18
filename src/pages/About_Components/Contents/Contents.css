@@ -1,0 +1,130 @@
+.move-effect {
+  transition: transform 0.5s ease-out; /* Increase transition duration for a slower effect */
+}
+
+.box1 {
+  border-color: #fbff31;
+  border-width: 0.2px;
+  border-style: solid;
+  width: 52vw;
+  height: 50vh;
+  position: absolute;
+  top: 37vh;
+  left: 10vw;
+  transform: translate(0, 0);
+}
+.box2 {
+  background-color: transparent;
+  border-width: 0.5px;
+  border-color: #fbff31;
+  border-style: solid;
+  width: 52vw;
+  height: 50vh;
+  position: absolute;
+  top: 35vh;
+  left: 12vw;
+  transition: transform 0.2s ease-out;
+}
+
+.intersection {
+  background-color: #fcff3138;
+  overflow-y: clip;
+  width: 50.07vw;
+  height: 48.04vh;
+  position: absolute;
+  top: 37vh;
+  left: 12vw;
+  z-index: 1;
+  transition: transform 0.2s ease-out;
+}
+
+.content {
+  margin: 5px;
+  font-weight: 500;
+  font-size: clamp(14px, 292px, 22px); 
+  line-height: 26.4px;
+  color: white;
+  position: relative;
+}
+
+.line{
+    width: 1px;
+    height: 45px;
+    background-color: yellow;
+    position: absolute;
+    top: 28.2vh;
+    left: 13vw;
+}
+.uline{
+    width: 139px;
+    height: 14px;
+    border: #fbff31 solid ;
+    border-width: 0px .5px .5px .5px;
+    position: absolute;
+    top: 26vh;
+    left: 8vw;
+}
+
+.blinky{
+  margin-left: 5px;
+  width: 3.4px;
+  height: 27px;
+  background: white;
+  animation-name: blink;
+  animation-timing-function: ease;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink{
+  10%{
+      background: transparent;
+  }
+  100%{
+      background: white;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  /* Adjust styles for screens with a maximum width of 600 pixels  */
+  .content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .intersection {
+    width: 63.07vw;
+    height: 48.04vh;
+    position: absolute;
+    top: 37.2vh;
+    left: 17.5vw;
+  }
+
+  .box2 {
+    width: 65vw;
+    height: 50vh;
+    position: absolute;
+    top: 35vh;
+    left: 17vw;
+  }
+
+  .box1 {
+    width: 65vw;
+    height: 50vh;
+    position: absolute;
+    top: 37vh;
+    left: 15vw;
+  }
+
+  .line{
+    left: 23vw;
+    height: 6.9vh;
+  }
+  .blinky{
+    height: 18px;
+    width: 1px;
+  }
+}
