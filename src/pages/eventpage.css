@@ -1,50 +1,89 @@
 .maincontainer {
-    position: relative;
-    width: 270px;
-    height: 360px;
+   
+    width: 300px;
+    height: 400px;
     --s: 40px; /* the size on the corner */
     --t: 2px;  /* the thickness of the border */
     --g: 10px; /* the gap between the border and image */
   
-padding: calc(var(--g) + var(--t));
-    outline: var(--t) solid #FFEE08; /* the color here */
-    outline-offset: calc(-1*var(--t));
-    mask:
-        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-        0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-        linear-gradient(#000 0 0) content-box;
-    transition: .4s;
+
 
 }
+.horizontal_scroll {
+    transform: rotate(-90deg);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.horizontal_scroll > div {
+   
+    transform: rotate(90deg);
+    transform-origin: right top;
+}
+.bg_yellow {
+    
+    color: #FFEE08;
+    width: fit-content;
+    
+    background-color: #090909;
+}
+
+.stick{
+    position: sticky;
+    left: 20px;
+    right: 10px;
+}
+
 .maincontainer:hover {
     outline-offset: calc(var(--g)/-1);
-    outline-color: aqua;
+   
   }
-
+.card_dec_bottom {
+    width: fit-content;
+}
 .thecard {
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.6s ease;
-    border: 5px;
-    border-style: solid;
-    border-color:#FFEE08;
-    background-color: #202020;
+    
 }
 
 .thefront {
+    
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 6px;
+    color: #333;
+    background: #FFEE08;
+}
+.theback {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-
-    color: #333;
+    transform: rotateY(180deg);
+    border-color: aqua;
+    border-width: 3px;
+  
+    background: aqua;
 }
 .rectangle {
-    background: #FFEE08;
+    background: aqua;
     height: 25px;
     width: 100px;
+    position: relative;
+    display: inline-block;
+    
+}
+.rectangle-black {
+    background: black;
+    border-top: #FFEE08;
+    border-style: solid;
+    height: 23px;
+    width: 97px;
     position: relative;
     display: inline-block;
     
@@ -58,7 +97,7 @@ padding: calc(var(--g) + var(--t));
 .triangle-r {
     width: 0;
     height: 0;
-    border-left: 25px solid #FFEE08;
+    border-left: 25px solid aqua;
     border-right: 25px solid transparent;
     border-bottom: 25px solid #FFEE08;
     position: relative;
@@ -67,8 +106,24 @@ padding: calc(var(--g) + var(--t));
     right: 0;
     margin: auto;
 }
+.triangle-r-black {
+    width: 0;
+    height: 0;
+    border-left: 25px solid #000000;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #000000;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 .event_type_text{
     right: 10px
+}
+#eventbanner {
+    width: 100vw;
+    position: relative;
 }
 .card_overlay {
     width: 100%;
@@ -88,17 +143,20 @@ padding: calc(var(--g) + var(--t));
     right: 0;
     margin: auto;
 }
-.theback {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-
-   
-    transform: rotateY(180deg);
+.triangle-l-black{
+    width: 0;
+    height: 0;
+    border-left: 21px solid transparent;
+    border-right: 21px solid black;
+    border-top: 21px solid black;
+    position: relative;
+    top: 2;
+    left: 2;
+    right: 2;
+    margin: auto;
 }
+
 .maincontainer:hover > .thecard {
     transform: rotateY(180deg);
-    border-color: aqua;
-    border-width: 2px;
+    
 }
