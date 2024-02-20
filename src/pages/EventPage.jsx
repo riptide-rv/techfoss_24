@@ -1,5 +1,5 @@
 import pos1 from '../images/pos1.jpeg';
-import pos2 from './loading.png'
+
 import './eventpage.css';
 import $ from 'jquery';
 import { useRef, useEffect } from 'react';

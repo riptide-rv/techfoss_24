@@ -5,7 +5,7 @@ import Images from './About_Components/Images/Images';
 
 export function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
        <div className="bg-about"></div>
        <div className="noise"></div>
     

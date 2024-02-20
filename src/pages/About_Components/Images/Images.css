@@ -2,10 +2,10 @@
     transition: transform 0.25s ease-out;
 }
 
-.border {
+.border1 {
   width: 18vw;
   height: 43vh;
-  border: #090909 solid 4px;
+  border: #ffee08 solid 2px;
 
   position: absolute;
   top: 35vh;
@@ -14,13 +14,13 @@
 
 .neo {
   background: rgb(0, 0, 0);
-  background: linear-gradient(
+  /* background: linear-gradient(
     145deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(3, 3, 3, .9) 25%,
     rgba(5, 5, 5, .7) 75%,
     rgba(9, 9, 9, .5) 100%
-  );
+  ); */
 
   width: 18vw;
   height: 38vh;
@@ -28,7 +28,7 @@
   position: absolute;
   top: 38vh;
   right: 11vw;
-  opacity: 0.75;
+  opacity: .9;
 
   -webkit-box-shadow: 0px 0px 8px 5px rgba(195, 207, 20, 0.9);
   -moz-box-shadow: 0px 0px 8px 5px rgba(195, 207, 20, 0.9);
