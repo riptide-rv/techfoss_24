@@ -23,7 +23,7 @@ export function BannerPage(){
                                 <img src={logo} alt="TECHFOSS"/>
                             </div>
                             <div>
-                        <h6 className='glitch text-8xl mr-4' data-text="TECHFOSS">TECHFOSS</h6> 
+                        <h6 className='glitch  sm:mr-4 mr-6 sm:text-8xl text-5xl' data-text="TECHFOSS">TECHFOSS</h6> 
                             </div>
                         </section>
                     </div>

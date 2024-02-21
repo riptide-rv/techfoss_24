@@ -33,6 +33,12 @@
     left: 20px;
     right: 10px;
 }
+@media (max-width:600px) {
+    .stick {
+        position: relative;
+        
+    }
+}
 
 .maincontainer:hover {
     outline-offset: calc(var(--g)/-1);
@@ -160,5 +166,4 @@
     transform: rotateY(180deg);
     
 }
-
 

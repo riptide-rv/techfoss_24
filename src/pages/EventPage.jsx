@@ -65,11 +65,11 @@ export function EventPage() {
     return (
         <>
         <div className='bg_yellow  overscroll-x-auto bg-black'>
-        <div className="flex p-4 pr-0 ">
+        <div className="flex sm:flex-row flex-col p-4 pr-0 ">
             
                 <div className='w-[63vw] ' >
                     <div className='w-[63vw] h-[100%] relative '>
-                      <div className='text-9xl flex justify-center items-center h-[100%]'><div >EVENTS</div></div>
+                      <div className='sm:text-9xl text-6xl w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'><div >EVENTS</div></div>
                     </div>
                 </div>
                 <div className='w-[7vw] bg-black ' >
@@ -77,15 +77,15 @@ export function EventPage() {
                        
                     </div>
                 </div>
-        <div className='flex bg-black gap-x-5 py-[50px] p-3'>
+        <div className='flex flex-col sm:flex-row w-[100vw] sm:w-[100%] items-center gap-x-0 bg-black sm:gap-x-5 gap-y-20 sm:gap-y-0 py-[50px] p-3'>
         <EventCard id1={"a"} id2={"b"} id3={1}/>
         <EventCard id2={"c"} id1={"d"} id3={2}/>
         <EventCard id1={"e"} id2={"f"} id3={3}/>
         <EventCard id1={"e"} id2={"f"} id3={4} />
           
         </div>
-        <div className='w-[7vw] bg-black ' >
-                    <div className='w-[7vw]  relative bg-black '>
+        <div className='w-[5vw] bg-black ' >
+                    <div className='w-[5vw]  relative bg-black '>
                        
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export function EventCard(
     return (
         <>
 
-        <div className="maincontainer stick " id={`${id1}`} style={{ left: `${(id3*15)}px`, right:`${((5-id3)*25)+10}px` }}>
+        <div className="maincontainer sm:sticky" id={`${id1}`} style={{ left: `${(id3*15)+20}px`, right:`${((5-id3)*25)+10}px` }}>
             <div className="thecard relative">
                 <div className="theback pb-3 pt-0 px-1 cyberpunk">
                 <div className='w-[100%] h-[100%] bg-black' >
