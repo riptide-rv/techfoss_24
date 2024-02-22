@@ -24,6 +24,7 @@ export function BannerPage(){
                             </div>
                             <div>
                         <h6 className='glitch  sm:mr-4 mr-6 sm:text-8xl text-5xl' data-text="TECHFOSS">TECHFOSS</h6> 
+                        <h2 className='sub-text text-2xl xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl '>February 27th</h2>
                             </div>
                         </section>
                     </div>

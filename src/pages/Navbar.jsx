@@ -14,7 +14,7 @@ export function Navbar() {
         return classes.filter(Boolean).join(' ')
       }
   return (
-    <Disclosure as="nav" className="bg-black fixed w-[100vw] top-0" style={{"z-index":10}}>
+    <Disclosure as="nav" className="bg-[#090909] fixed w-[100vw] top-0" style={{"z-index":10}}>
       {({ open }) => (
         <>
           <div className="mx-auto w-[100vw] px-2 sm:px-6 lg:px-8">
@@ -47,9 +47,9 @@ export function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          (index == current) ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
+                          index == current ? 'bg-[#ffee08] text-black ' : 'text-gray-300 bg-[#090909] hover:bg-[#fff34a]  hover:text-gray-900',
+                      'block rounded-md px-3 py-2 text-base font-medium '
+                    )}
                         onClick={() => setCurrent(index)}
                         aria-current={(index == current) ? 'page' : undefined}
                       >
@@ -70,9 +70,9 @@ export function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                        index == current ? 'bg-gray-900 text-white' : 'text-gray-300 bg-white hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
+                    index == current ? 'bg-[#ffee08] text-black ' : 'text-gray-300 bg-[#090909] hover:bg-yellow-200 hover:text-gray-900',
+                'block rounded-md px-3 py-2 text-base font-medium '
+              )}
                   onClick={() => {
                     console.log(index);
                     setCurrent(index);}}

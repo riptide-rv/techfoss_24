@@ -16,8 +16,6 @@ const Contents = () => {
     };
   }, []);
 
-  
-
   return (
     <div>
       <div
@@ -44,23 +42,19 @@ const Contents = () => {
           }px, ${(mousePosition.y / window.innerHeight - 0.5) * 10}px)`,
         }}
       >
-        <p className="content">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat non,
-          et sed, ducimus quaerat eaque repellat fuga nam adipisci
-          exercitationem expedita atque velit deserunt magni animi itaque. Iste
-          suscipit fugiat ut ea aut sint eligendi perspiciatis similique nostrum
-          vitae veritatis ducimus possimus quam, aliquam, tempore sit! Facilis
-          consequuntur voluptas at! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Porro, sapiente. Nostrum, aliquam enim reprehenderit
-          at vitae eveniet iste ea ad!
+        <p className="content text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+          This annual event has been a cornerstone in fostering a vibrant tech
+          community, and this year promises to be another chapter in our legacy.
+          Techfoss serves as a dynamic platform where students, professionals,
+          and tech enthusiasts unite to explore the latest trends, participate
+          in competitions, and engage in enriching workshops. As we celebrate
+          our 11th year, we invite you to join us in this journey of discovery
+          and advancement.
         </p>
-        <span></span>
-        <div
-          className="blinky"
-          
-        ></div>
+        
+        <div className="blinky"></div>    
       </div>
-      
+
       <div className="line"></div>
       <div className="uline"></div>
     </div>
