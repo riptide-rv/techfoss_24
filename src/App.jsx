@@ -4,13 +4,14 @@ import { EventPage } from './pages/EventPage'
 import { TestPage } from './pages/TestPage'
 import { BannerPage } from './pages/BannerPage'
 import { Navbar } from './pages/Navbar'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
+    <Router>
     <BannerPage/>
     <section className="w-[100vw] h-[30px]"></section>
     <div className='py-[0px] bg-yellow'>
@@ -24,7 +25,7 @@ function App() {
      </section>
      <div className='w-[100vw] h-[100vh] '></div>
      
-<div className="flex min-h-screen p-16 sm:p-0 items-center justify-start" style={{"color":"white"}}>
+<div className="flex min-h-screen p-16n sm:p-0 items-center justify-start" style={{"color":"white"}}>
   <div className="mx-auto w-full max-w-lg">
     <h1 className="text-4xl font-medium">Contact us</h1>
     <p className="mt-3">Email us at techfoss.csetist@gmail.com or message us here:</p>
@@ -50,6 +51,7 @@ function App() {
     </form>
   </div>
 </div>
+</Router>
     </>
   )
 }
