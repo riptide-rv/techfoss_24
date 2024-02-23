@@ -134,7 +134,7 @@ export function EventCard(
                     <div className='h-[100%] flex justify-center items-center' style={{}}>
                         <div className='flex-col text-white'>
                         <div>{eventName}</div>
-                        {id3<5 ?<a target='_blank' href={forml}><button className='regbutton m-3 text-sm'>REGISTER</button></a>:<div className='text-sm'>SPOT EVENT</div> }
+                        {id3<5 ?<a  style={{"text-decoration":"none", color:"aqua"}} target='_blank' href={forml}><button className='regbutton m-3 bg-[aqua] text-black sm:text-[aqua] sm:bg-transparent text-sm'>REGISTER</button></a>:<div className='text-sm'>SPOT EVENT</div> }
                     
         
                         </div>
