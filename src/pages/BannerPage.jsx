@@ -25,12 +25,12 @@ export function BannerPage(){
                             <div>
                         <h6 className='glitch  sm:mr-4 mr-6 sm:text-8xl text-5xl' data-text="TECHFOSS">TECHFOSS</h6> 
                         <h2 style={{
-                             "text-shadow": "-1px 0 aqua, 0 1px yellow, 1px 0 yellow, 0 px yellow",
+                             "text-shadow": "0px 0 aqua, 0 1px aqua, 1px 0 yellow, 0 -1px yellow",
                              "color":"#ffee08",
                              "cursor":"default",
                              "letterSpacing": "0.09rem",
                              "shadow" : "0 0 10px #ffee08, 0 0 20px #ffee08, 0 0 40px #ffee08, 0 0 80px #ffee08",
-                        }} className='sub-text text-lg xs:text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl'>FEBRUARY 27, 2024</h2>
+                        }} className='sub-text text-base xs:text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl'>FEBRUARY 27, 2024</h2>
                             </div>
                         </section>
                     </div>
