@@ -72,8 +72,14 @@ export function EventPage() {
         <div className="flex sm:flex-row flex-col p-4 pr-0 ">
             
                 <div className='w-[60vw] ' >
-                    <div className='w-[63vw] h-[100%] relative '>
-                      <div className='sm:text-9xl text-6xl w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'><div >EVENTS</div></div>
+                    <div className='w-[59vw] h-[100%] relative '>
+                      <div className='sm:text-9xl text-6xl w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'>
+                        <div>
+                        <div >EVENTS</div>
+                      <div className='text-sm pl-4 sm:text-lg  mt-3' style={{"letter-spacing":"0.5em"}}>CLICK ON CARD TO REGISTER</div></div>
+                        </div>
+                       
+                     
                     </div>
                 </div>
                 <div className='w-[7vw] bg-black ' >
@@ -81,7 +87,7 @@ export function EventPage() {
                        
                     </div>
                 </div>
-        <div className='flex flex-col sm:flex-row w-[100vw] sm:w-[100%] items-center gap-x-0 bg-black sm:gap-x-5 gap-y-20 sm:gap-y-0 py-[50px] p-3'>
+        <div className='flex flex-col sm:flex-row w-[100vw] sm:w-[100%] items-center gap-x-0 bg-black sm:gap-x-5 gap-y-20 sm:gap-y-0 py-[50px] p-3 overflow:auto'>
         <EventCard id1={"a"} id2={"b"} id3={1} forml={"https://bit.ly/ethicalhacking_TF"} eventName={"ETHICAL HACKING"} imageSrc={pos1} type={"WORKSHOP"}/>
         <EventCard id2={"c"} id1={"d"} id3={2} eventName={"NO CODE TOOLS"} imageSrc={pos2} forml={"https://bit.ly/airtable_TF"} type={"WORKSHOP"}/>
         <EventCard id1={"e"} id2={"f"} id3={3} eventName={"CAPTURE THE FLAG"} type={"TECHNICAL"} imageSrc={pos3} forml={"https://forms.gle/XX3dvrX4qPxnTXC3A"}/>
@@ -89,14 +95,16 @@ export function EventPage() {
         <EventCard eventName={"LEARNING STATION"} id3={5} type={"TECHNICAL"} imageSrc={pos6} />
         <EventCard eventName={"GAME ZONE"} id3={6} type={"NON TECHNICAL"} imageSrc={pos4}/>
         <EventCard eventName={"OPEN MIC"} id3={7} type={"NON TECHNICAL"} imageSrc={pos5} />    
-       
-          
-        </div>
-        <div className='w-[70vw] ' >
-                    <div className='w-[63vw] h-[100%] relative '>
-                      <div className='sm:text-3xl text-2xl pl-10 w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'><div >CLICK ON CARD TO REGISTER</div></div>
+        <div className='w-[70vw] bg-black ' >
+                 
+                </div>  
+        {/* <div className='w-[70vw] ' >
+                    <div className='w-[70vw] h-[100%] relative '>
+                      <div className='sm:text-3xl text-sm w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]' style={{"letter-spacing":"0.5em"}}><div >CLICK ON CARD TO REGISTER</div></div>
                     </div>
-                </div>
+                </div> */}
+        </div>
+        
     
        
         </div>

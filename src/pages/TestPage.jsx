@@ -25,8 +25,9 @@ function useHorizontalScroll() {
           if(el.scrollLeft == 0 && e.deltaY < 0) return;
           if (
             
-            !(el.scrollWidth - el.clientWidth - Math.round(el.scrollLeft) <= 0 && e.deltaY > 0)
+            !(el.scrollWidth - el.clientWidth - Math.round(el.scrollLeft) <= 1 && e.deltaY > 0)
           ) {
+           
             e.preventDefault();
           }
           if(isTrackpad) {
