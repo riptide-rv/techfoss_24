@@ -11,7 +11,7 @@ export function BannerPage(){
     return(
         <div className="w-[100vw] h-[230vh] banner_bg bg-[#090909] ">
            
-            <div className='w-[100%] h-[90%]  banner_overlay' id="home">
+            <div className='w-[100%] sm:h-[90%] h-[92%]  banner_overlay' id="home">
           
                     <div className='w-[100%] h-[45%] flex justify-center items-center'>
                         <section className='text-9xl cyberpunk2077 flex  pr-6 justify-center w-[60%] h-[60%] items-center'
