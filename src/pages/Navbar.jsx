@@ -47,11 +47,11 @@ export function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          index == current ? 'bg-[#ffee08] text-black ' : 'text-gray-300 bg-[#090909] hover:bg-[#fff34a]  hover:text-gray-900',
+                          false ? 'bg-[#ffee08] text-black ' : 'text-gray-300 bg-[#090909] hover:bg-[#fff34a]  hover:text-gray-900',
                       'block rounded-md px-3 py-2 text-base font-medium '
                     )}
                         onClick={() => setCurrent(index)}
-                        aria-current={(index == current) ? 'page' : undefined}
+                        aria-current={(false) ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
