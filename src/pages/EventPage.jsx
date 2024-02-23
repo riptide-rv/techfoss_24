@@ -1,5 +1,9 @@
 import pos1 from '../images/ethicalhacking.jpeg';
 import pos2 from '../images/nocodetool.jpeg'
+import pos3 from '../images/nontech1.jpeg'
+import pos4 from '../images/gamezone.jpeg'
+import pos5 from '../images/openmic.jpeg'
+import pos6 from '../images/lstation.jpeg'
 import './eventpage.css';
 import $ from 'jquery';
 import { useRef, useEffect } from 'react';
@@ -67,7 +71,7 @@ export function EventPage() {
         <div className='bg_yellow  overscroll-x-auto bg-black'>
         <div className="flex sm:flex-row flex-col p-4 pr-0 ">
             
-                <div className='w-[63vw] ' >
+                <div className='w-[60vw] ' >
                     <div className='w-[63vw] h-[100%] relative '>
                       <div className='sm:text-9xl text-6xl w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'><div >EVENTS</div></div>
                     </div>
@@ -80,14 +84,17 @@ export function EventPage() {
         <div className='flex flex-col sm:flex-row w-[100vw] sm:w-[100%] items-center gap-x-0 bg-black sm:gap-x-5 gap-y-20 sm:gap-y-0 py-[50px] p-3'>
         <EventCard id1={"a"} id2={"b"} id3={1} forml={"https://bit.ly/ethicalhacking_TF"} eventName={"ETHICAL HACKING"} imageSrc={pos1} type={"WORKSHOP"}/>
         <EventCard id2={"c"} id1={"d"} id3={2} eventName={"NO CODE TOOLS"} imageSrc={pos2} forml={"https://bit.ly/airtable_TF"} type={"WORKSHOP"}/>
-        <EventCard id1={"e"} id2={"f"} id3={3} eventName={"CAPTURE THE FLAG"} type={"TECHNICAL"}/>
-        <EventCard id1={"e"} id2={"f"} id3={4} eventName={"BINARY BOUNTY"} type={"TECHNICAL"} />
-        <EventCard eventName={"GAME ZONE"} id3={5}/>    
+        <EventCard id1={"e"} id2={"f"} id3={3} eventName={"CAPTURE THE FLAG"} type={"TECHNICAL"} imageSrc={pos3} forml={"https://forms.gle/XX3dvrX4qPxnTXC3A"}/>
+        <EventCard id1={"e"} id2={"f"} id3={4} eventName={"BINARY BOUNTY"} type={"TECHNICAL"} imageSrc={pos3}  forml={"https://forms.gle/FACH4qdoJKLgTdSk8  "}/>
+        <EventCard eventName={"LEARNING STATION"} id3={5} type={"TECHNICAL"} imageSrc={pos6} />
+        <EventCard eventName={"GAME ZONE"} id3={6} type={"NON TECHNICAL"} imageSrc={pos4}/>
+        <EventCard eventName={"OPEN MIC"} id3={7} type={"NON TECHNICAL"} imageSrc={pos5} />    
+       
           
         </div>
-        <div className='w-[5vw] bg-black ' >
-                    <div className='w-[5vw]  relative bg-black '>
-                       
+        <div className='w-[70vw] ' >
+                    <div className='w-[63vw] h-[100%] relative '>
+                      <div className='sm:text-3xl text-2xl pl-10 w-[100vw] pr-10 sm:pr- sm:w-[100%] flex justify-center items-center h-[100%]'><div >CLICK ON CARD TO REGISTER</div></div>
                     </div>
                 </div>
     
@@ -108,7 +115,7 @@ export function EventCard(
     return (
         <>
 
-        <div className="maincontainer sm:sticky" id={`${id1}`} style={{ left: `${(id3*15)+20}px`, right:`${((5-id3)*25)+10}px` }}>
+        <div className="maincontainer sm:sticky" id={`${id1}`} style={{ left: `${(id3*20)+20}px`, right:`${((8-id3)*25)+10}px` }}>
             <div className="thecard relative">
                 <div className="theback pb-3 pt-0 px-1 cyberpunk">
                 
