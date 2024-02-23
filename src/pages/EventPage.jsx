@@ -1,5 +1,5 @@
-import pos1 from '../images/pos1.jpeg';
-
+import pos1 from '../images/ethicalhacking.jpeg';
+import pos2 from '../images/nocodetool.jpeg'
 import './eventpage.css';
 import $ from 'jquery';
 import { useRef, useEffect } from 'react';
@@ -78,10 +78,11 @@ export function EventPage() {
                     </div>
                 </div>
         <div className='flex flex-col sm:flex-row w-[100vw] sm:w-[100%] items-center gap-x-0 bg-black sm:gap-x-5 gap-y-20 sm:gap-y-0 py-[50px] p-3'>
-        <EventCard id1={"a"} id2={"b"} id3={1}/>
-        <EventCard id2={"c"} id1={"d"} id3={2}/>
-        <EventCard id1={"e"} id2={"f"} id3={3}/>
-        <EventCard id1={"e"} id2={"f"} id3={4} />
+        <EventCard id1={"a"} id2={"b"} id3={1} forml={"https://bit.ly/ethicalhacking_TF"} eventName={"ETHICAL HACKING"} imageSrc={pos1} type={"WORKSHOP"}/>
+        <EventCard id2={"c"} id1={"d"} id3={2} eventName={"NO CODE TOOLS"} imageSrc={pos2} forml={"https://bit.ly/airtable_TF"} type={"WORKSHOP"}/>
+        <EventCard id1={"e"} id2={"f"} id3={3} eventName={"CAPTURE THE FLAG"} type={"TECHNICAL"}/>
+        <EventCard id1={"e"} id2={"f"} id3={4} eventName={"BINARY BOUNTY"} type={"TECHNICAL"} />
+        <EventCard eventName={"GAME ZONE"} id3={5}/>    
           
         </div>
         <div className='w-[5vw] bg-black ' >
@@ -100,7 +101,7 @@ export function EventPage() {
 
 }
 export function EventCard(
-{id1, id2, id3}
+{id1, id2, id3, eventName,date, imageSrc, type, forml}
 ) {
     
 
@@ -110,15 +111,34 @@ export function EventCard(
         <div className="maincontainer sm:sticky" id={`${id1}`} style={{ left: `${(id3*15)+20}px`, right:`${((5-id3)*25)+10}px` }}>
             <div className="thecard relative">
                 <div className="theback pb-3 pt-0 px-1 cyberpunk">
+                
                 <div className='w-[100%] h-[100%] bg-black' >
+                    
+
+                   
+                    <div className='h-[100%] flex justify-center items-center' style={{}}>
+                        <div className='flex-col text-white'>
+                        <div>{eventName}</div>
+                        {id3<5 ?<a target='_blank' href={forml}><button className='regbutton m-3 text-sm'>REGISTER</button></a>:<div className='text-sm'>SPOT EVENT</div> }
+                    
+        
+                        </div>
+                        
+                    </div>
                     
                     </div>
                 </div>
-                <div className="thefront pb-4 relative cyberpunk-flipped">
-                <div className='w-[100%] h-[100%] bg-black' >
-                      
-                <div class="relative p-3 bg">
-                  <img src={pos1} alt="event" />
+                <div className="thefront pb-4  relative cyberpunk-flipped">
+                <div className='w-[100%] h-[100%] flex items-center justify-center bg-black' >
+                <div className="relative justify-center items-center flex-col m-2  revimg p-3 bg">
+                  <img src={imageSrc} className='flex-grow' alt="event" />
+                  <div style={{
+                    color:"#ffee08",
+                    "margin-top": "19px",
+                    "letter-spacing":"4px",
+                    "border-color":"#ffee08"
+                  }} className='text-xl flex-grow border-2 p-3'>{type}</div>
+                 
                 </div>
                 </div>
                

@@ -4,6 +4,9 @@
   padding:0rem;
   text-align: center;
 }
+.bgyellow{
+  background-color: #FFEE0B;
+}
 
 .logo {
   height: 6em;

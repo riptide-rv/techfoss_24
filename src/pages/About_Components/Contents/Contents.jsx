@@ -42,7 +42,7 @@ const Contents = () => {
           }px, ${(mousePosition.y / window.innerHeight - 0.5) * 10}px)`,
         }}
       >
-        <p className="content text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
+        <p className="content p-3 sm:px-12 text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl ">
           This annual event has been a cornerstone in fostering a vibrant tech
           community, and this year promises to be another chapter in our legacy.
           Techfoss serves as a dynamic platform where students, professionals,

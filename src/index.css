@@ -232,7 +232,10 @@ section.cyberpunk:nth-child(odd):before {
 }
 
 
-
+.bgyellow {
+  background: #FFEE0B;
+  color: black;
+}
 
 
 

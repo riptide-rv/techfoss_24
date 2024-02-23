@@ -14,7 +14,7 @@ function App() {
     <Router>
     <BannerPage/>
     <section className="w-[100vw] h-[30px]"></section>
-    <div className='py-[0px] bg-yellow'>
+    <div className='py-[0px] bg-yellow' id='events'>
    
     <TestPage/>
     </div>
@@ -48,7 +48,7 @@ function App() {
 
         </div>
       </div>
-      <button type="submit" className="mt-5 rounded-md bg-black-900 px-10 py-2 text-white">Send Message</button>
+      <button type="submit" className="mt-5 rounded-md bg-black-900 hover:bgyellow px-10 py-2 text-white">Send Message</button>
     </form>
   </div>
 </div>

@@ -54,7 +54,7 @@ export function TestPage() {
     const scrollRef = useHorizontalScroll();
    
   return (
-    <div className="scroll-container w-[100vw]" id="events" ref={scrollRef} style={{ overflow: "auto" , scrollbarColor: "black"}}>
+    <div className="scroll-container w-[100vw]"  ref={scrollRef} style={{ overflow: "auto" , scrollbarColor: "black"}}>
       <div style={{ whiteSpace: "nowrap" }}>
         <div className="flex inline gap-4">
                 <EventPage/>
